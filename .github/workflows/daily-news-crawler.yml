@@ -10,6 +10,9 @@ on:
 jobs:
   crawl-and-commit:
     runs-on: ubuntu-latest
+    # 添加权限设置
+    permissions:
+      contents: write
 
     steps:
     - name: 检出仓库
@@ -40,11 +43,16 @@ jobs:
         # 获取当前日期
         DATE=$(date +"%Y%m%d")
 
-        # 检查是否有新文件
-        if [ -f "$DATE.md" ]; then
-          git add "$DATE.md"
-          git commit -m "自动更新: $DATE 每日新闻"
-          git push
-        else
+        # 检查文件变更状态
+        git status
+
+        # 检查是否有新文件或修改
+        if git diff --exit-code --quiet && [ ! -f "$DATE.md" ]; then
           echo "没有发现今日($DATE)新闻文件，跳过提交"
+          exit 0
         fi
+
+        # 添加所有变更
+        git add .
+        git commit -m "自动更新: $DATE 每日新闻"
+        git push
