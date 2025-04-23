@@ -43,6 +43,10 @@
     if ('scrollRestoration' in window.history) {
       window.history.scrollRestoration = 'manual';
     }
+    window.isPcClient = Boolean(window.electron) && (
+      window.navigator.userAgent.indexOf('pc-client') > 0 ||
+      window.navigator.userAgent.indexOf('TencentNews') > 0
+    );
   } catch {}
 </script>
 <script>
@@ -62,10 +66,11 @@
     console.warn(err);
   }
 </script>
-<link href="https://mat1.gtimg.com/qqcdn/qqindex2021/common-static/hel/qqnews-pc-channel_20250416110344/static/css/index.css" rel="stylesheet">
+<link href="https://mat1.gtimg.com/qqcdn/qqindex2021/common-static/hel/qqnews-pc-channel_20250422071518/static/css/index.css" rel="stylesheet">
 
-<script>window.__HEL_PRESET_META__={"qqnews-pc-components":{"app":{"id":1366,"name":"qqnews-pc-components","app_group_name":"qqnews-pc-components","proj_ver":{"map":{},"utime":0},"online_version":"qqnews-pc-components_20250306025658","build_version":"qqnews-pc-components_20250416110300","update_at":"2025-04-16T03:03:44.000Z","desc":"set by [init], from container [formal.pc.dc.tj100986] worker [2]"},"version":{"sub_app_name":"qqnews-pc-components","sub_app_version":"qqnews-pc-components_20250416110300","src_map":{"webDirPath":"https://mat1.gtimg.com/qqcdn/qqindex2021/common-static/hel/qqnews-pc-components_20250416110300","htmlIndexSrc":"https://mat1.gtimg.com/qqcdn/qqindex2021/common-static/hel/qqnews-pc-components_20250416110300/index.html","extractMode":"all","iframeSrc":"","chunkCssSrcList":["https://mat1.gtimg.com/qqcdn/qqindex2021/common-static/hel/qqnews-pc-components_20250416110300/static/css/index.css"],"chunkJsSrcList":["https://mat1.gtimg.com/qqcdn/qqindex2021/common-static/hel/qqnews-pc-components_20250416110300/static/js/index.js"],"staticCssSrcList":[],"staticJsSrcList":["https://mat1.gtimg.com/qqcdn/qqindex2021/static/20231212123233/react.production.min.js","https://mat1.gtimg.com/qqcdn/qqindex2021/static/20231212123233/react-dom.production.min.js","https://mat1.gtimg.com/qqcdn/qqindex2021/common-static/hel/hel-base-v16.js"],"relativeCssSrcList":[],"relativeJsSrcList":[],"privCssSrcList":[],"headAssetList":[{"tag":"staticScript","append":false,"attrs":{"src":"https://mat1.gtimg.com/qqcdn/qqindex2021/static/20231212123233/react.production.min.js"}},{"tag":"staticScript","append":false,"attrs":{"src":"https://mat1.gtimg.com/qqcdn/qqindex2021/static/20231212123233/react-dom.production.min.js"}},{"tag":"staticScript","append":false,"attrs":{"src":"https://mat1.gtimg.com/qqcdn/qqindex2021/common-static/hel/hel-base-v16.js"}},{"tag":"script","append":true,"attrs":{"src":"https://mat1.gtimg.com/qqcdn/qqindex2021/common-static/hel/qqnews-pc-components_20250416110300/static/js/index.js","defer":""}},{"tag":"link","append":true,"attrs":{"href":"https://mat1.gtimg.com/qqcdn/qqindex2021/common-static/hel/qqnews-pc-components_20250416110300/static/css/index.css","rel":"stylesheet"}}],"bodyAssetList":[]},"update_at":"2025-04-16T03:03:43.000Z","create_at":"2025-04-16T03:03:43.000Z","_worker_id":"2","_is_backup":true}}}</script>
-<script>window.__VIEW_PATH__="channel.ejs";</script></head>
+<script>window.__HEL_PRESET_META__={"qqnews-pc-components":{"app":{"id":1366,"name":"qqnews-pc-components","app_group_name":"qqnews-pc-components","proj_ver":{"map":{},"utime":0},"online_version":"qqnews-pc-components_20250306025658","build_version":"qqnews-pc-components_20250422071427","update_at":"2025-04-22T11:15:17.000Z","desc":"set by [init], from container [formal.pc.dc.sz100970] worker [2]"},"version":{"sub_app_name":"qqnews-pc-components","sub_app_version":"qqnews-pc-components_20250422071427","src_map":{"webDirPath":"https://mat1.gtimg.com/qqcdn/qqindex2021/common-static/hel/qqnews-pc-components_20250422071427","htmlIndexSrc":"https://mat1.gtimg.com/qqcdn/qqindex2021/common-static/hel/qqnews-pc-components_20250422071427/index.html","extractMode":"all","iframeSrc":"","chunkCssSrcList":["https://mat1.gtimg.com/qqcdn/qqindex2021/common-static/hel/qqnews-pc-components_20250422071427/static/css/index.css"],"chunkJsSrcList":["https://mat1.gtimg.com/qqcdn/qqindex2021/common-static/hel/qqnews-pc-components_20250422071427/static/js/index.js"],"staticCssSrcList":[],"staticJsSrcList":["https://mat1.gtimg.com/qqcdn/qqindex2021/static/20231212123233/react.production.min.js","https://mat1.gtimg.com/qqcdn/qqindex2021/static/20231212123233/react-dom.production.min.js","https://mat1.gtimg.com/qqcdn/qqindex2021/common-static/hel/hel-base-v16.js"],"relativeCssSrcList":[],"relativeJsSrcList":[],"privCssSrcList":[],"srvModSrcList":[],"headAssetList":[{"tag":"staticScript","append":false,"attrs":{"src":"https://mat1.gtimg.com/qqcdn/qqindex2021/static/20231212123233/react.production.min.js"}},{"tag":"staticScript","append":false,"attrs":{"src":"https://mat1.gtimg.com/qqcdn/qqindex2021/static/20231212123233/react-dom.production.min.js"}},{"tag":"staticScript","append":false,"attrs":{"src":"https://mat1.gtimg.com/qqcdn/qqindex2021/common-static/hel/hel-base-v16.js"}},{"tag":"script","append":true,"attrs":{"src":"https://mat1.gtimg.com/qqcdn/qqindex2021/common-static/hel/qqnews-pc-components_20250422071427/static/js/index.js","defer":""}},{"tag":"link","append":true,"attrs":{"href":"https://mat1.gtimg.com/qqcdn/qqindex2021/common-static/hel/qqnews-pc-components_20250422071427/static/css/index.css","rel":"stylesheet"}}],"bodyAssetList":[]},"update_at":"2025-04-22T11:15:17.000Z","create_at":"2025-04-22T11:15:17.000Z","_worker_id":"2","_is_backup":true}}}</script>
+<script>window.__VIEW_PATH__="channel.ejs";</script>
+</head>
 
 <body class="">
   <div id="root" class="channel-root channel"></div>
@@ -91,9 +96,9 @@
 <script>document.cookie="hel_err=;path=/;";</script>
 <script src="https://mat1.gtimg.com/qqcdn/qqindex2021/common-static/hel/hel-base-v16.js"></script>
 <script src="https://mat1.gtimg.com/qqcdn/qqindex2021/common-static/hel/qqnews-pc-hel-entry_20250117174052/static/js/index.js"></script>
-<link rel="preload" href="https://mat1.gtimg.com/qqcdn/qqindex2021/common-static/hel/qqnews-pc-channel_20250416110344/static/js/index.js" as="script">
-<link rel="preload" href="https://mat1.gtimg.com/qqcdn/qqindex2021/common-static/hel/qqnews-pc-components_20250416110300/static/js/index.js" as="script">
-<script>window.loadProject("https://mat1.gtimg.com/qqcdn/qqindex2021/common-static/hel/qqnews-pc-channel_20250416110344/static/js/index.js");</script>
+<link rel="preload" href="https://mat1.gtimg.com/qqcdn/qqindex2021/common-static/hel/qqnews-pc-channel_20250422071518/static/js/index.js" as="script">
+<link rel="preload" href="https://mat1.gtimg.com/qqcdn/qqindex2021/common-static/hel/qqnews-pc-components_20250422071427/static/js/index.js" as="script">
+<script>window.loadProject("https://mat1.gtimg.com/qqcdn/qqindex2021/common-static/hel/qqnews-pc-channel_20250422071518/static/js/index.js");</script>
 <iframe id="videoFrame" style="display: none;" src="https://video.qq.com/cookie/sync_qqnews.html"></iframe>
 </body>
 
