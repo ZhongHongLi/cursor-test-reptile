@@ -10352,3 +10352,61 @@ Omit --global to set the identity only in this repository.
 
 fatal: empty ident name (for <runner@runnervmf4ws1.hqvb1w5sullexdfu0h25jepama.yx.internal.cloudapp.net>) not allowed
 
+2025-09-18T01:12:53.746Z info: 开始爬取: https://news.sina.com.cn/
+2025-09-18T01:12:53.747Z info: 正在获取页面: https://news.sina.com.cn/
+2025-09-18T01:12:56.048Z info: 成功获取页面: https://news.sina.com.cn/, 状态码: 200
+2025-09-18T01:12:56.049Z info: 开始解析新闻内容
+2025-09-18T01:12:56.174Z info: 成功解析到 378 条新闻
+2025-09-18T01:12:56.174Z info: 成功解析到 378 条新闻
+2025-09-18T01:12:56.189Z info: 已保存 378 条新闻到 Markdown 文件 20250918.md
+2025-09-18T01:12:56.189Z info: 成功爬取 378 条新闻
+2025-09-18T01:12:56.189Z info: 等待 4 秒后继续下一个网站
+2025-09-18T01:13:00.090Z info: 开始爬取: https://news.163.com/
+2025-09-18T01:13:00.091Z info: 正在获取页面: https://news.163.com/
+2025-09-18T01:13:01.734Z info: 成功获取页面: https://news.163.com/, 状态码: 200
+2025-09-18T01:13:01.735Z info: 开始解析新闻内容
+2025-09-18T01:13:01.798Z info: 成功解析到 793 条新闻
+2025-09-18T01:13:01.798Z info: 成功解析到 793 条新闻
+2025-09-18T01:13:01.799Z info: 已保存 793 条新闻到 Markdown 文件 20250918.md
+2025-09-18T01:13:01.799Z info: 成功爬取 793 条新闻
+2025-09-18T01:13:01.800Z info: 等待 3 秒后继续下一个网站
+2025-09-18T01:13:04.903Z info: 开始爬取: https://news.qq.com/
+2025-09-18T01:13:04.903Z info: 正在获取页面: https://news.qq.com/
+2025-09-18T01:13:05.830Z info: 成功获取页面: https://news.qq.com/, 状态码: 200
+2025-09-18T01:13:05.830Z info: 开始解析新闻内容
+2025-09-18T01:13:05.832Z info: 成功解析到 0 条新闻
+2025-09-18T01:13:05.832Z warn: 从 https://news.qq.com/ 没有解析到任何新闻
+2025-09-18T01:13:05.832Z info: 成功爬取 0 条新闻
+2025-09-18T01:13:05.832Z info: 等待 4 秒后继续下一个网站
+2025-09-18T01:13:09.829Z info: 开始爬取: https://www.sohu.com/c/8/
+2025-09-18T01:13:09.830Z info: 正在获取页面: https://www.sohu.com/c/8/
+2025-09-18T01:13:12.165Z info: 成功获取页面: https://www.sohu.com/c/8/, 状态码: 200
+2025-09-18T01:13:12.167Z info: 开始解析新闻内容
+2025-09-18T01:13:12.232Z info: 成功解析到 42 条新闻
+2025-09-18T01:13:12.233Z info: 成功解析到 42 条新闻
+2025-09-18T01:13:12.233Z info: 已保存 42 条新闻到 Markdown 文件 20250918.md
+2025-09-18T01:13:12.233Z info: 成功爬取 42 条新闻
+2025-09-18T01:13:12.233Z info: 等待 7 秒后继续下一个网站
+2025-09-18T01:13:19.434Z info: 开始爬取: https://www.thepaper.cn/
+2025-09-18T01:13:19.435Z info: 正在获取页面: https://www.thepaper.cn/
+2025-09-18T01:13:21.419Z error: 获取页面失败: Request failed with status code 403
+2025-09-18T01:13:21.419Z error: 爬虫运行失败: Request failed with status code 403
+2025-09-18T01:13:21.419Z info: 成功爬取 0 条新闻
+2025-09-18T01:13:21.419Z info: 等待 5 秒后继续下一个网站
+2025-09-18T01:13:26.053Z info: 已保存 1213 条新闻到 Markdown 文件 20250918.md
+2025-09-18T01:13:26.053Z info: 已保存总计 1213 条新闻到 Markdown 文件 20250918.md
+2025-09-18T01:13:26.054Z info: 准备提交文件到GitHub...
+2025-09-18T01:13:26.271Z error: GitHub提交失败: Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <runner@runnervmf4ws1.w42nivuh1ygu3fj3od5gocisve.yx.internal.cloudapp.net>) not allowed
+
